@@ -7,7 +7,8 @@ const handleClick = id => setSearchID(id)
     <ul>
         {
             searchOnchange?.map(locations=>(
-                <li onClick={()=>handleClick(locations.id)} 
+                <li className='filter_li' 
+                onClick={()=>handleClick(locations.id)} 
                 key={locations.id}>
                     {locations.name}
                 </li>

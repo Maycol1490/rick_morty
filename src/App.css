@@ -50,7 +50,6 @@ input:hover {
 }
 /* todo Button  ++++++++++++++++++++++++++++++++++++++++++*/
 .button {
-    max-width: 100%;
     --border-right: 6px;
     --text-stroke-color: rgba(12, 12, 12, 0.6);
     --animation-color: #37FF8B;
@@ -67,7 +66,6 @@ input:hover {
 }
 
 .hover-text {
-    max-width: 100%;
     position: absolute;
     box-sizing: border-box;
     content: attr(data-text);
@@ -82,7 +80,7 @@ input:hover {
 
 /* hover */
 .button:hover .hover-text {
-    max-width: 100%;
+    width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
 }
 .results_form{
@@ -97,6 +95,10 @@ input:hover {
     z-index: 1000;
     overflow-y:scroll;
     cursor: pointer;
+}
+.filter_li:hover{
+    background-color: #B2DF28;
+    color: #091942;
 }
 
 .container_body_principal{
