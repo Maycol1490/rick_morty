@@ -39,12 +39,14 @@ function App() {
   }
   const handleOnchange = e => {
     if (e.target.value === "") {
-      return setsearchOnchange()
+      setsearchOnchange()
+    }else{
+      const URL = `https://rickandmortyapi.com/api/location?name=${e.target.value}`
+      axios.get(URL)
+        .then(res => setsearchOnchange(res.data.results))
+        .catch(err => console.log(err))
+
     }
-    const URL = `https://rickandmortyapi.com/api/location?name=${e.target.value}`
-    axios.get(URL)
-      .then(res => setsearchOnchange(res.data.results))
-      .catch(err => console.log(err))
   }
 
   return (
