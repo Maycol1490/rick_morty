@@ -220,18 +220,18 @@ input:hover {
     gap: 2rem;
     padding: 3.5rem;
 }
-.container_cardPage span{
-    font-size: 2rem;
-    font-weight: bold;
-    color:#000;
-}
+
 .number_cardPage{
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
     color: #B2DF28;
     padding: 0.5rem ;
     border-radius: 20px;
     background-color: #0009;
 }
 .btn_cardPage{
+    font-size: 2rem;
     padding: 0.5rem;
     border-radius: 50px;
     color: #0009;
